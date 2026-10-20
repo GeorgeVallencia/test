@@ -1,4 +1,5 @@
 import Link from "next/link"
+import AuthNavbar from "./components/AuthNavbar"
 
 export default function Home() {
   const subjects = [
@@ -15,17 +16,7 @@ export default function Home() {
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#ff4500] text-lg text-white">Q</span>
           quizzy
         </a>
-        <nav aria-label="Main navigation" className="flex items-center gap-2 sm:gap-3">
-          <a href="#subjects" className="hidden rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold transition hover:border-[#ff4500] hover:text-[#ff4500] sm:inline-flex">
-            Explore subjects
-          </a>
-          <button type="button" className="cursor-pointer rounded-full px-4 py-2.5 text-sm font-semibold transition hover:text-[#ff4500] sm:px-5">
-            Log in
-          </button>
-          <button type="button" className="cursor-pointer rounded-full bg-[#ff4500] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#e63e00] sm:px-5">
-            Sign up
-          </button>
-        </nav>
+        <AuthNavbar />
       </header>
 
       <section id="home" className="mx-auto max-w-6xl px-6 pb-16 pt-12 text-center sm:pt-20">
